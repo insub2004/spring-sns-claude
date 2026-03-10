@@ -1,0 +1,21 @@
+### 회원가입
+POST http://localhost:8081/api/v1/users/signup
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "password123"
+}
+
+###
+
+### 중복 사용자명 회원가입 (에러 케이스)
+POST http://localhost:8081/api/v1/users/signup
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "password456"
+}
+
+###
