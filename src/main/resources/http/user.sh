@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASE_URL="http://localhost:8081"
+BASE_URL="http://localhost:8080"
 
 echo "=== 회원가입 ==="
 curl -s -X POST "$BASE_URL/api/v1/users/signup" \
